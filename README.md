@@ -28,7 +28,7 @@
 
 This project involves the modification of the HERAN electric fan, model HDF-12AH710, with the soldering of single-core wires onto its circuit board. The single-core wires on the circuit board are connected to an Arduino (Arduino Uno R3) through DuPont wires. The Arduino serves as the control module for the electric fan, and it is connected to a Raspberry Pi 4. In this system, the Raspberry Pi functions as the sound detection module, receiving voice recognition commands from the user and sending action signals to the Arduino.
 
-The system architecture is as follows:
+The system architecture is as follows:<br>
 ![image](https://github.com/evankuo2017/Voice-Controlled-Fan/assets/81676959/ae9850cd-1d9e-4e44-acb7-398d0032e566)
 
 ## Arduino
