@@ -16,6 +16,6 @@
 1.運行snowboyDetection.py前需要正常在ResperryPi設定好麥克風、ResperryPi跟Arduino間需要先接通訊用線(USB type B即可)
 2.Arduino需依照程式碼內容將輸出信號接角接上電風扇作為各種功能對應的控制線
 3.這些聲音辨識的pmdl檔案來源為經由snowboy技術訓練後的結果，本專題訓練樣本採自行錄製並未上傳
-訓練方法可見https://github.com/rhasspy/snowboy-seasalt
+訓練方法可見 https://github.com/rhasspy/snowboy-seasalt
 
 其餘成果展示及實作說明可見專題報告書.pdf
