@@ -5,4 +5,4 @@
 因此系統架構如下：
 
 ## Arduino
-在
+在fansArduino資料夾中包含了Arduino相關的測試程式碼及實際運行於系統中的程式碼
