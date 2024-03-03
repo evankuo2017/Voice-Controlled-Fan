@@ -38,8 +38,8 @@ The `fansResperryPi` folder includes test code and the startup script `snowboyDe
 
 ## Important Notes:
 1. Before running `snowboyDetection.py`, ensure that the microphone is properly configured on the Raspberry Pi, and there is a communication line (USB type B) connecting the Raspberry Pi and Arduino.
-2. To run `snowboyDetection.py` on startup, add the following line to the end of `nano ~/.bashrc`:
-'sudo python3 /path/to/snowboyDetection.py &'
+2. To run `snowboyDetection.py` on startup, add the following line to the end of `nano ~/.bashrc`:<br>
+sudo python3 /path/to/snowboyDetection.py &
 3. Follow the instructions in the Arduino code to connect the output signals to the electric fan for various functionalities.
 4. The voice recognition models (`pmdl` files) used in this project are trained using Snowboy technology. Training samples are not included, but the training method can be found at [rhasspy/snowboy-seasalt](https://github.com/rhasspy/snowboy-seasalt).
 
