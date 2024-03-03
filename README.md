@@ -1,4 +1,4 @@
-## 摘要
+<!--## 摘要
 本專題改裝了HERAN的電風扇，型號HDF-12AH710，對其電路板進行焊接(焊上單心線)
 電路板上的單心線會經由杜邦線轉接到Arduino，以實現Arduino(Arduino uno R3)對電風扇的控制，因此Arduino作為對電風扇的控制模組，而Arduino連接著樹梅派(RaspberryPi 4)，樹梅派在此系統作為聲音感測模組，接收聲音辨識使用者需求，並將動作訊號輸出給Arduino。
 
@@ -22,3 +22,25 @@
 訓練方法可見 https://github.com/rhasspy/snowboy-seasalt
 
 其餘成果展示及實作說明可見專題報告書.pdf
+-->
+
+# Project Summary
+
+This project involves the modification of the HERAN electric fan, model HDF-12AH710, with the soldering of single-core wires onto its circuit board. The single-core wires on the circuit board are connected to an Arduino (Arduino Uno R3) through DuPont wires. The Arduino serves as the control module for the electric fan, and it is connected to a Raspberry Pi 4. In this system, the Raspberry Pi functions as the sound detection module, receiving voice recognition commands from the user and sending action signals to the Arduino.
+
+The system architecture is as follows:
+
+## Arduino
+The `fansArduino` folder contains test code and the actual program `fanSystem.ino` for Arduino, which controls the fan. Upload the code to the Arduino board to run the system.
+
+## Raspberry Pi
+The `fansResperryPi` folder includes test code and the startup script `snowboyDetection.py` for the Raspberry Pi. This script detects sound and communicates with the Arduino. To run this script successfully, download the Snowboy project from [Kitt-AI](https://github.com/Kitt-AI), copy the `python` folder from `examples/` in this project, name it `snowboytest`, and place `snowboyDetection.py` and its sound recognition model files (`pmdl` folder) in this path. This ensures that `snowboyDetection.py` runs correctly.
+
+## Important Notes:
+1. Before running `snowboyDetection.py`, ensure that the microphone is properly configured on the Raspberry Pi, and there is a communication line (USB type B) connecting the Raspberry Pi and Arduino.
+2. To run `snowboyDetection.py` on startup, add the following line to the end of `nano ~/.bashrc`:
+'sudo python3 /path/to/snowboyDetection.py &'
+3. Follow the instructions in the Arduino code to connect the output signals to the electric fan for various functionalities.
+4. The voice recognition models (`pmdl` files) used in this project are trained using Snowboy technology. Training samples are not included, but the training method can be found at [rhasspy/snowboy-seasalt](https://github.com/rhasspy/snowboy-seasalt).
+
+For further details, demonstrations, and implementation explanations, please refer to the project report `專題報告書.pdf`.
