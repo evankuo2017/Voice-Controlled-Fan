@@ -9,7 +9,7 @@
 
 ## ResperryPi
 在fansResperryPi資料夾中包含了ResperryPi相關的測試程式碼及開機即運行之程式snowboyDetection.py，也就是偵測聲音並跟Arduino通訊的程式
-這個程式要能正常運行需要於樹梅派中下載https://github.com/Kitt-AI的snowboy專案，將此專案的examples/資料夾中python資料結複製一份
+這個程式要能正常運行需要於樹梅派中下載https://github.com/Kitt-AI 的snowboy專案，將此專案的examples/資料夾中python資料結複製一份
 命名為snowboytest，然後將snowboyDetection.py及其聲音辨識模型檔案(pmdl資料夾)放到這個路徑下，snowboyDetection.py即可正常運行
 
 ## 注意事項：
